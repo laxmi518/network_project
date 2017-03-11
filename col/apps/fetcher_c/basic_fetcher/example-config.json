@@ -1,0 +1,39 @@
+{
+    "core": {
+        "log_level": "WARN"
+    },
+    "col_type": "scp",
+
+    "basedir": "$LOGINSPECT_HOME/storage/col/scp_fetcher",
+
+    "client_map": {
+        "scp|192.168.2.205-sujan:22:./log": {
+            "device_ip": "192.168.2.205",
+            "port": 22,
+            "user": "sujan",
+            "password": "shakya",
+            "log_file": "log1.txt",
+            "path": "log1.txt",
+            "parser": "LineParser",
+            "fetch_interval_seconds": 5,
+            "charset": "utf-8",
+            "device_name": "makalu",
+            "normalizer": null,
+            "repo": "default"
+        },
+        "scp|::1-sujan:22:wiring.py": {
+            "device_ip": "::1",
+            "port": 22,
+            "user": "suzanshakya",
+            "password": "shakya123",
+            "log_file": "log2.txt",
+            "path": "log2.txt",
+            "parser": "LineParser",
+            "fetch_interval_seconds": 5,
+            "charset": "utf-8",
+            "device_name": "makalu",
+            "normalizer": null,
+            "repo": "default"
+        }
+    }
+}

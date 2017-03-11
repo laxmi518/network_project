@@ -1,0 +1,7 @@
+{
+    "ApplicationName": "TestSummationCommand",
+    "Version": "1.0",
+    "Description": "This is a a test summation process command (summation)",
+    "minimum_lp_version": "5.2.0",
+    "plugins": ["Summation"]
+}

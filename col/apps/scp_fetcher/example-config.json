@@ -1,0 +1,42 @@
+{
+    "core": {
+        "log_level": "WARN"
+    },
+    "col_type": "scp",
+
+    "basedir": "$LOGINSPECT_HOME/storage/col/scp_fetcher",
+
+    "client_map": {
+        "scp|192.168.2.205-sujan:22:./log": {
+            "ip": "192.168.2.205",
+            // validate(type=int)
+            "port": 22,
+            // validate(rex='^[^|:]+$')
+            "user": "sujan",
+            "password": "shakya",
+            // validate(rex='^[^|]*$')
+            "remotepath": "./log",
+            // validate(in_db(Parser.name)
+            "parser": "LineParser",
+            // validate(type=int)
+            "fetch_interval_seconds": 60,
+            "charset": "utf-8",
+            "device_name": "makalu",
+            "normalizer": null,
+            "repo": "default"
+        },
+        "scp|::1-sujan:22:wiring.py": {
+            "ip": "::1",
+            "port": 22,
+            "user": "suzanshakya",
+            "password": "shakya123",
+            "remotepath": "wiring.py",
+            "parser": "LineParser",
+            "fetch_interval_seconds": 60,
+            "charset": "utf-8",
+            "device_name": "makalu",
+            "normalizer": null,
+            "repo": "default"
+        }
+    }
+}

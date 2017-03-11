@@ -1,0 +1,54 @@
+{
+    "core": {
+        "log_level": "WARN"
+    },
+    "client_map": {
+        "127.0.0.1": {
+            "charset": "utf_8",
+            "device_name": "localhost",
+            "username": "ritesh",
+            "normalizer": "None",
+            "repo": "default"
+        },
+        "192.168.2.224": {
+            "charset": "utf_8",
+            "device_name": "hari_dai_pc",
+            "username": "hati_master",
+            "normalizer": "None",
+            "repo": "default"
+        },
+        "192.168.2.9": {
+            "charset": "utf_8",
+            "device_name": "ritesh_ubuntu_pc",
+            "username": "ritesh_khoste",
+            "normalizer": "None",
+            "repo": "default"
+        },
+        "192.168.2.63": {
+            "charset": "utf_8",
+            "device_name": "ritesh_ubuntu_pc",
+            "username": "ritesh khosete",
+            "normalizer": "None",
+            "repo": "default"
+        },
+        "::1": {
+            "charset": "utf_8",
+            "device_name": "ritesh_mac",
+            "username": "ritesh khosete",
+            "normalizer": "None",
+            "repo": "default"
+        },
+        "192.168.2.0/24": {
+            "charset": "utf_8",
+            "device_name": "ritesh_cidr",
+            "username": "ritesh khosete",
+            "normalizer": "None",
+            "repo": "default"
+        }
+
+    },
+    "expire_time": 600,
+    "col_type": "netflow",
+    "port": 9001,
+    "loginspect_name": "LogInspect500"
+}

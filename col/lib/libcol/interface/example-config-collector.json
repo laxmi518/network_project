@@ -1,0 +1,23 @@
+{
+    "col_type": "syslog",
+    "loginspect_name": "LogInspect500",
+    "port": 1514,
+    "ssl_port": 1515,
+    "ssl_args": {
+        "keyfile": "$LOGINSPECT_HOME/etc/remote_connection/certificates/ssl.key",
+        "certfile": "$LOGINSPECT_HOME/etc/remote_connection/certificates/ssl.crt"
+    },
+    "client_map": {
+        "127.0.0.1": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "John"
+        },
+        "::1": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "John"
+        }
+
+    }
+}

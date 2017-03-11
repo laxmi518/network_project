@@ -1,0 +1,17 @@
+{
+    "core": {
+        "log_level": "DEBUG"
+    },
+    "col_type": "opsec_fetcher",
+
+    "loginspect_name": "LIv5",
+    "client_map": {
+        "checkpoint|10.45.1.91":{
+            "device_ip": "10.45.1.91",
+            "device_name": "checkpoint device",
+            "fetch_interval": 10,
+            "normalizer": null,
+            "repo": "default"
+        }
+    }
+}

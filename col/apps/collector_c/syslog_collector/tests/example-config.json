@@ -1,0 +1,19 @@
+{
+    "col_type": "syslogc",
+    "loginspect_name": "LogInspect520",
+    "port": 1514,
+    "no_of_threads": 4,
+    "queue_size": 5000,
+    "ssl_port": 9999,
+    "ssl_keyfile": "/opt/immune/etc/remote_connection/certificates/ssl.key",
+    "ssl_certfile": "/opt/immune/etc/remote_connection/certificates/ssl.crt",
+    "client_map": {
+        "127.0.0.1": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "localhostnew",
+            "normalizer": "None",
+            "repo": "default"
+        }
+    }
+}

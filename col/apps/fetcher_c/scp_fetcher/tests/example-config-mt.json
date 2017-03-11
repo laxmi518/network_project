@@ -1,0 +1,39 @@
+{
+    "core": {
+        "log_level": "WARN"
+    },
+    "col_type": "scp",
+
+    "basedir": "/opt/immune/storage/col/scp_fetcher/",
+    "loginspect_name": "somename",
+    "client_map": {
+        "scp|110.44.116.197.pritesh:1:./log": {
+            "device_ip": "110.44.116.197",
+            "port": 22,
+            "user": "support",
+            "password": "support@immune",
+            "path": "scp_test/test3/",
+            "parser": "LineParser",
+            "fetch_interval_seconds": 15,
+            "charset": "utf-8",
+            "device_name": "makalu",
+            "normalizer": null,
+            "repo": "default",
+            "regex": ".*"
+        },
+        "scp|110.44.116.197.pritesh:2:./log": {
+            "device_ip": "110.44.116.197",
+            "port": 22,
+            "user": "support",
+            "password": "support@immune",
+            "path": "scp_test/test4/",
+            "parser": "LineParser",
+            "fetch_interval_seconds": 15,
+            "charset": "utf-8",
+            "device_name": "makalu",
+            "normalizer": null,
+            "repo": "default",
+            "regex": ".*"
+        }
+    }
+}

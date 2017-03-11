@@ -1,0 +1,9 @@
+{
+    "type": "processcommands",
+    "name": "SummationCommand",
+    "ui_text": "Summation Command",
+    "version": "1.0",
+    "symlinks": {
+        "$THIS/aggregator-api-test-jar.jar": "$PROCESS_COMMANDS/"
+    }
+}

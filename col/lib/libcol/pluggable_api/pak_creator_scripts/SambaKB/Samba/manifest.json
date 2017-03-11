@@ -1,0 +1,32 @@
+{
+    "type": "knowledgebase",
+    "name": "Samba",
+    "version": "1.0",
+    "Application": {
+        "NormalizationPackage": 
+            [{
+                "norm_package_id": 32, 
+                "signatures": [
+                        {"vid": "SIG_16000", "pattern": "<:all><:'\\]'><:all>:<process:all>(<process_id:int>)<:all><status:word> <object:'connection'> <:all>to<:'(service|\\s+)'><service:all_max>", "extra_key_value": {"label": "Connection,Status"}, "which_norm_package": 32, "sig_id": 16000, "example": "[2002/07/21 13:23:25, 3] smbd/service.c:close_cnum(514) maya (172.16.1.6) closed connection to service IPC$\r\n[2002/07/21 13:23:25, 3] smbd/connection.c:yield_connection(40) Yielding connection to IPC$"},
+                        {"vid": "SIG_16002", "pattern": "<:all><:'\\]'><:all>:<process:all>(<process_id:int>)<:all><object:'Transaction'><:all>length<size:int>", "extra_key_value": {"label": "Transaction,Length"}, "which_norm_package": 32, "sig_id": 16002, "example": "[2002/07/21 13:23:25, 3] smbd/process.c:process_smb(615) Transaction 923 of length 49"},
+                        {"vid": "SIG_16003", "pattern": "<:all><:'\\]'><:all>:<process:all>(<process_id:int>)<:word>to<path:all_max>", "extra_key_value": {"label": "Directory,Changed"}, "which_norm_package": 32, "sig_id": 16003, "example": "[2002/07/21 13:23:25, 3] lib/doscalls.c:dos_ChDir(336) dos_ChDir to /home/samba"},
+                        {"vid": "SIG_16001", "pattern": "<:all><:'\\]'><:all>:<process:all>(<process_id:int>)<:all>message<message:all> (", "extra_key_value": {"label": "Message,Switch"}, "which_norm_package": 32, "sig_id": 16001, "example": "[2002/07/21 13:23:25, 3] smbd/process.c:switch_message(448) switch message SMBread (pid 467)\r\n[2002/07/21 13:23:25, 3] smbd/process.c:switch_message(448) switch message SMBreadbraw (pid 467)"},
+                        {"vid": "SIG_16004", "pattern": "<:all><:'\\]'><:all>:<process:all>(<process_id:int>)<:all> read", "extra_key_value": {"label": "Read"}, "which_norm_package": 32, "sig_id": 16004, "example": "[2002/07/21 13:23:25, 3] smbd/reply.c:reply_read(2199) read fnum=4207 num=2820 nread=2820"},
+                        {"vid": "SIG_16005", "pattern": "<:all><:'\\]'><:all>:<process:all>(<process_id:int>)<:all><status:'Error|error'><:all>=<message:all_max>", "extra_key_value": {"label": "Read,Error,Application"}, "which_norm_package": 32, "sig_id": 16005, "example": "[2003/05/16 14:49:49, 0] lib/util_sock.c:read_socket_with_timeout(298) read_socket_with_timeout: timeout read. read error = Connection reset by peer.\r\n[2003/05/16 14:07:23, 0] lib/util_sock.c:read_data(436) read_data: read failure for 4. Error = Connection reset by peer"},
+                        {"vid": "SIG_16006", "pattern": "<:all><:'\\]'><:all>:<process:all>(<process_id:int>)<:all><status:'failed'><:all>for file<file:all> (", "extra_key_value": {"label": "File,Error,Application"}, "which_norm_package": 32, "sig_id": 16006, "example": "[2003/05/16 14:49:49, 0] smbd/oplock.c:oplock_break(758) oplock_break: receive_smb error (Connection reset by peer) oplock_break failed for file Cookies/index.dat (dev = 811, inode = 1864322, file_id = 6)."},
+                        {"vid": "SIG_16007", "pattern": "<:all><:'\\]'><:all>:<process:all>(<process_id:int>)<:all><object:'client'><status:'failure'>in break - <message:all_max>", "extra_key_value": {"label": "Client,Application,Down"}, "which_norm_package": 32, "sig_id": 16007, "example": "[2003/05/16 14:49:49, 0] smbd/oplock.c:oplock_break(843) oplock_break: client failure in break - shutting down this smbd."}
+                        ],
+                "sig_start_id": 16000,
+                "description": "This package contains signatures for Samba.",
+                "version": 5,
+                "sig_next_id": 16008,
+                "range": 500,
+                "name": "IS_Samba"
+            }],
+        "ApplicationInfo": {
+                "version": "1.0",
+                "name": "Samba",
+                "description": "This package contains all the KB components for Samba."
+        }
+   }
+}

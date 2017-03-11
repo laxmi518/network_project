@@ -1,0 +1,53 @@
+{
+    "core": {
+        "log_level": "WARN"
+    },
+    "col_type": "ftpc",
+    "port": 2021,
+
+    "output_wire": "batch_collector_out",
+
+    "basedir": "$LOGINSPECT_HOME/storage/col/ftp_collector",
+
+    "client_map": {
+        "::1": {
+            "alpha": {
+                "sid": "ftpc|::1-ubuntu",
+                "password": "alpha",
+                "home": "::1/alpha",
+                "permission": "elradfmw",
+                "parser": "SyslogParser",
+                "charset": "utf-8",
+                "device_name": "localhost",
+                "normalizer": null,
+                "repo": "default"
+            }
+        },
+        "127.0.0.1": {
+            "beta": {
+                "sid": "ftpc|127.0.0.1-windows",
+                "password": "beta",
+                "home": "127.0.0.1/beta",
+                "permission": "elradfmw",
+                "parser": "LineParser",
+                "charset": "utf-8",
+                "device_name": "localhost",
+                "normalizer": null,
+                "repo": "default"
+            }
+        },
+        "127.0.0.1/8": {
+            "beta": {
+                "sid": "ftpc|127.0.0.1/8-windows",
+                "password": "beta",
+                "home": "127.0.0.1/beta",
+                "permission": "elradfmw",
+                "parser": "LineParser",
+                "charset": "utf-8",
+                "device_name": "localhost",
+                "normalizer": null,
+                "repo": "default"
+            }
+        }
+    }
+}

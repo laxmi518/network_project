@@ -1,0 +1,38 @@
+{
+    "col_type": "syslog",
+    "loginspect_name": "LogInspect500",
+    "port": 1514,
+    "ssl_port": 1515,
+    "ssl_args": {
+        "keyfile": "$LOGINSPECT_HOME/etc/remote_connection/certificates/ssl.key",
+        "certfile": "$LOGINSPECT_HOME/etc/remote_connection/certificates/ssl.crt"
+    },
+    "client_map": {
+        "192.168.2.8": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "John"
+        },
+        "127.0.0.1": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "localhost"
+        },
+        "192.168.2.4": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "Adam"
+        },
+        "::1": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "localhost"
+        },
+        "192.168.2.64/27": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "cidr_test"
+        }
+    }
+}
+

@@ -1,0 +1,129 @@
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Value8
+   fun:PyObject_Free
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   fun:PyImport_ImportModuleLevel
+   obj:/usr/lib/libpython2.7.so.1.0
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Value8
+   fun:PyObject_Free
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   fun:PyImport_ImportModuleLevel
+   obj:/usr/lib/libpython2.7.so.1.0
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Value8
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Value8
+   fun:PyObject_Free
+   fun:PyGrammar_AddAccelerators
+   fun:PyParser_New
+   obj:/usr/lib/libpython2.7.so.1.0
+   fun:PyParser_ASTFromString
+   fun:PyRun_StringFlags
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalFrameEx
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Value8
+   fun:PyObject_Realloc
+   fun:PyNode_AddChild
+   fun:PyParser_AddToken
+   obj:/usr/lib/libpython2.7.so.1.0
+   fun:PyParser_ASTFromString
+   fun:PyRun_StringFlags
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Value8
+   fun:PyObject_Free
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   fun:PyDict_SetItem
+   fun:_PyModule_Clear
+   fun:PyImport_Cleanup
+   fun:Py_Finalize
+   fun:memory_cleanup
+   fun:sig_handler
+   obj:/lib/x86_64-linux-gnu/libc-2.15.so
+   obj:/lib/x86_64-linux-gnu/libc-2.15.so
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Value8
+   fun:PyObject_Free
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   obj:/usr/lib/libpython2.7.so.1.0
+   fun:_PyImport_Fini
+   fun:Py_Finalize
+   fun:memory_cleanup
+   fun:sig_handler
+   obj:/lib/x86_64-linux-gnu/libc-2.15.so
+   obj:/lib/x86_64-linux-gnu/libc-2.15.so
+   fun:sleep
+   fun:fet_start
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Value8
+   fun:PyObject_Free
+   fun:PyDict_Fini
+   fun:Py_Finalize
+   fun:memory_cleanup
+   fun:sig_handler
+   obj:/lib/x86_64-linux-gnu/libc-2.15.so
+   obj:/lib/x86_64-linux-gnu/libc-2.15.so
+   fun:sleep
+   fun:fet_start
+   fun:main
+}

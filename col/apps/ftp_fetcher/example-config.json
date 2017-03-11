@@ -1,0 +1,52 @@
+{
+    "col_type": "ftpf",
+
+    "basedir": "$LOGINSPECT_HOME/storage/col/ftp_fetcher",
+
+    "client_map": {
+        "ftpf|192.168.2.224-sujan:21:": {
+            "ip": "192.168.2.224",
+            // validate(type=int)
+            "port": 21,
+            // validate(rex='^[^|:]+$')
+            "user": "sujan",
+            "password": "shakya",
+            // validate(rex='^[^|]*$')
+            "path": "",
+            // validate(in_db(Parser.name)
+            "parser": "LineParser",
+            // validate(type=int)
+            "fetch_interval_seconds": 60,
+            "charset": "utf-8",
+            "device_name": "John",
+            "normalizer": null,
+            "repo": "default"
+        },
+        "ftpf|192.168.2.224-sujan:21:logs/Apache/": {
+            "ip": "192.168.2.224",
+            "port": 21,
+            "user": "sujan",
+            "password": "shakya",
+            "path": "logs/Apache/",
+            "parser": "LineParser",
+            "fetch_interval_seconds": 60,
+            "charset": "utf-8",
+            "device_name": "John",
+            "normalizer": null,
+            "repo": "default"
+        },
+        "ftpf|::1-alpha:2021:wiring.py": {
+            "ip": "::1",
+            "port": 2021,
+            "user": "alpha",
+            "password": "alpha",
+            "path": "wiring.py",
+            "parser": "LineParser",
+            "fetch_interval_seconds": 60,
+            "charset": "utf-8",
+            "device_name": "John",
+            "normalizer": null,
+            "repo": "default"
+        }
+    }
+}

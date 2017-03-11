@@ -1,0 +1,35 @@
+{
+    "col_type": "syslogc",
+    "loginspect_name": "LogInspect520",
+    "port": 1514,
+    "client_map": {
+        "127.0.0.1": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "localhostnew",
+            "normalizer": "None",
+            "repo": "default"
+        },
+        "::1": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "localhost",
+            "normalizer": "None",
+            "repo": "default"
+        },
+        "192.168.2.38": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "Adam",
+            "normalizer": "None",
+            "repo": "default"
+        },
+        "10.94.0.86": {
+            "parser": "SyslogParser",
+            "charset": "utf-8",
+            "device_name": "HariOM",
+            "normalizer": "None",
+            "repo": "default"
+		}
+    }
+}

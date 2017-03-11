@@ -1,0 +1,27 @@
+{
+    "core": {
+        "log_level": "WARN"
+    }, 
+    "client_map": {
+        "127.0.0.1": {
+            "charset": "utf_8", 
+            "device_name": "localhost",
+            "username": "ritesh"
+        },
+        "::1": {
+            "charset": "utf_8", 
+            "device_name": "localhost",
+            "username": "ritesh khosete"
+        },
+        "192.168.2.0/24": {
+            "charset": "utf_8", 
+            "device_name": "ritesh_cidr",
+            "username": "ritesh khosete"
+        }
+        
+    },
+    "expire_time": 600,
+    "col_type": "netflow",  
+    "port": 9001,
+    "loginspect_name": "LogInspect500"
+}

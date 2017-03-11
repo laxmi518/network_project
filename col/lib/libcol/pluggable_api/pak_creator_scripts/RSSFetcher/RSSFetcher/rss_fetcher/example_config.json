@@ -1,0 +1,40 @@
+{
+    "col_type": "rss_fetcher",
+    "loginspect_name" : "LiV5.2",
+    "client_map": {
+//        "rss_fetcher|127.0.0.1-https://immunesecurity.unfuddle.com/account/activity.rss": {
+//            "device_ip": "127.0.0.1",
+//            "charset": "utf-8",
+//            "device_name": "localhost",
+//            "rss_url" : "https://immunesecurity.unfuddle.com/account/activity.rss",
+//            "host": "https://immunesecurity.unfuddle.com",
+//            "fetch_interval": 10,
+//            "username": "ashok",
+//            "password": "dementor"
+//        },
+//        "rss_fetcher|127.0.0.1-http://rss.cnn.com/rss/edition_europe.rss": {
+//            "device_ip": "127.0.0.1",
+//            "charset": "utf-8",
+//            "device_name": "localhost",
+//            "fetch_interval": 15,
+//            "rss_url": "http://rss.cnn.com/rss/edition_europe.rss"
+//        }
+//        "rss_fetcher|8.8.8.8-http://rss.cnn.com/rss/edition_technology.rss": {
+//            "device_ip": "8.8.8.8",
+//            "charset": "utf-8",
+//            "device_name": "google",
+//            "fetch_interval": 20,
+//            "rss_url": "http://rss.cnn.com/rss/edition_technology.rss"
+//        },
+        "rss_fetcher|9.8.8.8-http://www.freelancer.com/rss.xml": {
+            "device_ip": "9.8.8.8",
+            "charset": "utf-8",
+            "device_name": "google",
+            "fetch_interval": 20,
+            "rss_url": "http://www.freelancer.com/rss.xml"
+        }
+
+
+
+    }
+}

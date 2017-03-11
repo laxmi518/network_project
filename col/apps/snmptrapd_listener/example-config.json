@@ -1,0 +1,60 @@
+{
+    "core": {
+        "log_level": "WARN"
+    },
+
+    "port": 162,
+
+    "loginspect_name": "LIv5",
+
+    "snmpv12_agents": {
+        "agent1": {
+            "community_string": "public"
+        },
+        "agent2": {
+            "community_string": "public2"
+        }
+    },
+
+    "SNMPv3_users": {
+        "test-user": {
+            "auth-key": "authkey1",
+            "priv-key": "privkey1"
+        },
+        "test-user2": {
+            "auth-key": "authkey1",
+            "priv-key": "privkey2"
+        }
+    },
+
+    "client_list": [
+        "192.168.2.8",
+        "127.0.0.1",
+        "10.211.55.3"
+    ],
+
+    "name_ip_mapping": {
+        "192.168.2.8": "John",
+        "127.0.0.1": "localhost",
+        "10.211.55.3": "Smith",
+        "192.168.2.39": "Ashok"
+    },
+    "repo_norm_mapping": {
+        "192.168.2.8": {
+                        "normalizer": null,
+                        "repo": "default"
+                        },
+        "127.0.0.1": {
+                      "normalizer": null,
+                      "repo": "default"
+                      },
+        "10.211.55.3": {
+                        "normalizer": null,
+                        "repo": "default"
+                        },
+        "192.168.2.39": {
+                         "normalizer": null,
+                         "repo": "default"
+                         }
+    }
+}

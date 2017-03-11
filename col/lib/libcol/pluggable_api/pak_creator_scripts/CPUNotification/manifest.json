@@ -1,0 +1,7 @@
+{
+    "ApplicationName": "CPUNotification",
+    "Version": "1.0",
+    "Description": "This is a cpu usage notification application",
+    "minimum_lp_version": "5.1.4",
+    "plugins": ["CPUNotification"]
+}

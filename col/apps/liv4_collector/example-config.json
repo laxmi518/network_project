@@ -1,0 +1,18 @@
+{
+    "col_type": "v4",
+    "loginspect_name" : "LogInspect500",
+    "upload_channel": {
+        "protocol": "ftp",
+        "port": 121,
+        "username": "alpha",
+        "password": "alpha",
+        "home": "$LOGINSPECT_HOME/storage/col/liv4_collector/$repo",
+        "normalizer": null,
+        "repo": "default"
+    },
+
+    // if upload_channel in null or N/A, this path is searched for v4 logs.
+    "path": "",
+    "normalizer": "default",
+    "repo": "v4"
+}

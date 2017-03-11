@@ -1,0 +1,29 @@
+{
+    "core": {
+        "log_level": "DEBUG"
+    },
+    "col_type": "sdeef",
+    "client_map": {
+        "127.0.0.1": {
+            "device_ip": "127.0.0.1",
+            "username": "ritesh",
+            "password": "password",
+            "method": "https",
+            "device_name": "localhost",
+            "fetch_interval": 6,
+            "normalizer": null,
+            "repo": "default"
+        },
+        "192.168.2.36": {
+            "device_ip": "192.168.2.36",
+            "username": "RitesPC",
+            "password": "ritesh",
+            "method": "https",
+            "device_name": "John",
+            "fetch_interval": 8,
+            "normalizer": null,
+            "repo": "default"
+        }
+    },
+    "loginspect_name": "LogInspect500"
+}

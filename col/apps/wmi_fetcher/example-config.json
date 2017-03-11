@@ -1,0 +1,33 @@
+{
+    "core": {
+        "log_level": "WARN"
+    },
+    "col_type": "wmi",
+    "client_map": {
+        "192.168.2.225": {
+            "username": "hari",
+            "password": "hari",
+            "fetch_interval": 60,
+            "parser": "WmiParser",
+            "charset": "utf-8",
+            "severity": 5,
+            "facility": 1,
+            "device_name": "John",
+            "normalizer": null,
+            "repo": "default"
+        },
+        "192.168.2.227": {
+            "username": "admin",
+            "password": "admin",
+            "fetch_interval": 60,
+            "parser": "WmiParser",
+            "charset": "utf-8",
+            "severity": 5,
+            "facility": 1,
+            "device_name": "Adam",
+            "normalizer": null,
+            "repo": "default"
+        }
+    },
+    "loginspect_name": "LogInspect500"
+}

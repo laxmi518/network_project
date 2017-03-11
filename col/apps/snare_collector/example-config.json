@@ -1,0 +1,35 @@
+{
+    "col_type": "snarec",
+    "loginspect_name": "LogInspect500",
+    "port": 509,
+    "client_map": {
+        "127.0.0.1": {
+            "parser": "SnareParser",
+            "charset": "utf-8",
+            "device_name": "localhost",
+            "normalizer": null,
+            "repo": "default"
+        },
+        "::1": {
+            "parser": "SnareParser",
+            "charset": "utf-8",
+            "device_name": "localhost",
+            "normalizer": null,
+            "repo": "default"
+        },
+        "192.168.2.64/27": {
+            "parser": "SnareParser",
+            "charset": "utf-8",
+            "device_name": "cidr_test",
+            "normalizer": null,
+            "repo": "default"
+        },
+        "192.168.2.22": {
+            "parser": "SnareParser",
+            "charset": "utf-8",
+            "device_name": "cidr_test",
+            "normalizer": null,
+            "repo": "default"
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+"text":"RSS Fetcher",
+"name":"RSSFetcher",
+"ui":"App.pluggables.modules.Collection.apps.RSSFetcher.Main",
+"status":true
+}

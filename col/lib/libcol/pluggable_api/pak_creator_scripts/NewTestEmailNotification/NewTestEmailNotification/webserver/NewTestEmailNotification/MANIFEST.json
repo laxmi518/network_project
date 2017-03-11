@@ -1,0 +1,6 @@
+{
+"text":"New Test Email Notification",
+"name":"NewTestEmailNotification",
+"ui":"App.pluggables.modules.Notification.apps.NewTestEmailNotification.Main",
+"status":true
+}

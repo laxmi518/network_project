@@ -1,0 +1,28 @@
+{
+    "col_type": "snare",
+    "loginspect_name": "LogInspect500",
+    "port": 509,
+    "client_map": {
+        "127.0.0.1": {
+            "parser": "SnareParser",
+            "charset": "utf-8",
+            "device_name": "localhost"
+        },
+        "192.168.22": {
+            "parser": "SnareParser",
+            "charset": "utf-8",
+            "device_name": "Adam"
+        },
+        "::1": {
+            "parser": "SnareParser",
+            "charset": "utf-8",
+            "device_name": "localhost"
+        },
+        "192.168.2.64/27": {
+            "parser": "SnareParser",
+            "charset": "utf-8",
+            "device_name": "cidr_test"
+        }
+    }
+}
+

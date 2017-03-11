@@ -1,0 +1,20 @@
+{
+    "core": {
+        "log_level": "WARN"
+    },
+    "app": "FileSystemCollector",
+    "col_type": "filesystem",
+    "loginspect_name": "LogInspect500",
+    "client_map": {
+        "$LOGINSPECT_HOME/var/log/service/*/current": {
+            "exclude": ["$LOGINSPECT_HOME/var/log/service/boot/*"],
+            "parser": "StackTraceParser",
+            "normalizer": "Normalizer1",
+            "repo": "Repository1",
+            "charset": "utf-8",
+            "device_name": "localhost",
+            "normalizer": null,
+            "repo": "default"
+        }
+    }
+}

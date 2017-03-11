@@ -1,0 +1,36 @@
+{
+    "col_type": "snmp_fetcher",
+    "loginspect_name" : "LiV5",
+    "client_map": {
+        "snmp_fetcher|127.0.0.1": {
+            "device_ip": "127.0.0.1",
+            "port": 161,
+            "charset": "utf-8",
+            "device_name": "localhost",
+            //"oids" : {"1.3.6.1.2.1.4.22.1" : 200, "1.3.6.1.2.1.1.3" : 500, "1.3.6.1.4.1.2021.4" : 100},
+            //"oids" : {"1.3.6.1.4.1.2021.4.2.0.1" : 100},
+            "oid" : "1.3.6.1.2.1.4.22.1",
+            //"oid" : "1.3",
+            "fetch_interval" : 15,
+            "snmp_version" : "v12",
+            "community_string": "public",
+            "normalizer": null,
+            "repo": "default"
+        },
+        "snmp_fetcher|::1": {
+            "device_ip": "::1",
+            "port": 161,
+            "charset": "utf-8",
+            "device_name": "localhost",
+            //"oids" : {"1.3.6.1.2.1.4.22.1" : 200, "1.3.6.1.2.1.1.3" : 500, "1.3.6.1.4.1.2021.4" : 100},
+            //"oids" : {"1.3.6.1.4.1.2021.4.2.0.1" : 100},
+            "oid" : "1.3.6.1.2.1.4.22.1.0",
+            "fetch_interval" : 10,
+            "snmp_version" : "v12",
+            "community_string": "public",
+            "normalizer": null,
+            "repo": "default"
+        }
+
+    }
+}

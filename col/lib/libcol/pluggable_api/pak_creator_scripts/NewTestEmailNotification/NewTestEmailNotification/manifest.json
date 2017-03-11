@@ -1,0 +1,16 @@
+{
+    "type": "alertnotifications",
+    "name": "NewTestEmailNotification",
+    "ui_text": "New Test Email Notification",
+    "version": "1.0",
+    "notification_name": "newtestemail",
+    "config_gen_script": "newemailcfg.py",
+    "ui": "ui/NewTestEmailNotification",
+    "webserver": "webserver/NewTestEmailNotification",
+    "symlinks": {
+        "$THIS/config_gen/newemailcfg.py": "$ALERT_CONFIG_GEN_PATH/",
+        "$THIS/ui/NewTestEmailNotification": "$UI/Notification/apps/",
+        "$THIS/webserver/NewTestEmailNotification": "$WEBSERVER/Notification/apps/",
+        "$THIS/alert_dispatcher/new_test_http_plugin.py": "$ALERT_NOTIFICATION/"
+    }
+}

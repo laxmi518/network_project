@@ -1,0 +1,25 @@
+{
+    "core": {
+        "log_level": "WARN"
+    },
+    "col_type": "scp",
+
+    "basedir": "/opt/immune/storage/col/scp_fetcher/",
+    "loginspect_name": "somename",
+    "client_map": {
+        "scp|192.168.1.1.pritesh:22:./log": {
+            "device_ip": "192.168.1.1",
+            "port": 22,
+            "user": "username",
+            "password": "password",
+            "path": "scp_test/abc/ghi",
+            "parser": "LineParser",
+            "fetch_interval_seconds": 10,
+            "charset": "utf-8",
+            "device_name": "makalu",
+            "normalizer": null,
+            "repo": "default",
+            "regex": ".*"
+        }
+    }
+}

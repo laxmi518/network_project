@@ -1,0 +1,8 @@
+{
+    "type": "lookup",
+    "ui_text": "LDAP Lookup",
+    "version": "1.0",
+    "symlinks": {
+        "$THIS/ldap_lookup.zip": "$LOOKUP/"
+    }
+}

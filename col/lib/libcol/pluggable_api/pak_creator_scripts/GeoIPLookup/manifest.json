@@ -1,0 +1,7 @@
+{
+    "ApplicationName": "GeoIPLookup",
+    "Version": "1.0",
+    "Description": "This is a a geo ip lookup process command",
+    "minimum_lp_version": "5.2.0",
+    "plugins": ["GeoIP"]
+}

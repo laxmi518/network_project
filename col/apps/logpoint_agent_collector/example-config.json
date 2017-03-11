@@ -1,0 +1,26 @@
+{
+    "col_type": "lpagent",
+    "client_map": {
+        "192.168.2.224": {
+            "apps": ["integrity_monitor", "integrity_scanner"],
+            "integrity_monitor": {"path":"c:\\test1;c:\\test2"},
+            "integrity_scanner": {"path":"c:\\test1"},
+            "charset": "utf-8",
+            "parser": "LineParser",
+            "device_name": "test",
+            "normalizer": null,
+            "repo": "default"
+        },
+        "192.168.2.0/24": {
+            "apps": ["integrity_monitor", "integrity_scanner"],
+            "integrity_monitor": {"path":"c:\\test1;c:\\test2"},
+            "integrity_scanner": {"path":"c:\\test1"},
+            "charset": "utf-8",
+            "parser": "LineParser",
+            "device_name": "cidr test",
+            "normalizer": null,
+            "repo": "default"
+        }
+    },
+    "loginspect_name": "LogInspect500"
+}

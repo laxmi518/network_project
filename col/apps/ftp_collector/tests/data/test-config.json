@@ -1,0 +1,31 @@
+{
+    "core": {
+        "log_level": "WARN"
+    },
+    "col_type": "ftpc",
+    "port": 2021,
+    "basedir": "/tmp/test_ftp_collector",
+
+    "client_map": {
+        "127.0.0.1": {
+            "alpha": {
+                "sid": "ftpc|127.0.0.1-ubuntu",
+                "password": "alpha",
+                "home": "/tmp/alpha",
+                "permission": "elradfmw",
+                "parser": "SyslogParser",
+                "charset": "utf-8",
+                "device_name": "localhost"
+            },
+            "beta": {
+                "sid": "ftpc|127.0.0.1-windows",
+                "password": "beta",
+                "home": "/tmp/beta",
+                "permission": "elradfmw",
+                "parser": "LineParser",
+                "charset": "utf-8",
+                "device_name": "localhost"
+            }
+        }
+    }
+}

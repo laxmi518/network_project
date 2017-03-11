@@ -1,0 +1,12 @@
+{
+    "col_type": "rss_fetcher",
+    "loginspect_name" : "LiV5.2",
+    "client_map": {
+        "test_fetcher|100.8.8.8-http://www.freelancer.com": {
+            "device_ip": "100.8.8.8",
+            "charset": "utf-8",
+            "device_name": "test_device",
+            "fetch_interval": 5
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "ApplicationName": "LDAPLookup",
+    "Version": "1.0",
+    "Description": "This is a LDAP lookup application",
+    "minimum_lp_version": "5.1.4",
+    "plugins": ["LDAPLookup"]
+}

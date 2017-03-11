@@ -1,0 +1,12 @@
+{
+    "interval" : 10,
+    "scheduling" : true,
+    "response_scripts":
+        {
+        "email_response":
+            {
+            "email_address": "aa@dev.immunesecurity.com",
+            "interval": 30
+            }
+        }
+}

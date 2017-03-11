@@ -1,0 +1,4 @@
+
+void *get_collector_out_socket(char *service_name);
+
+void send_event_with_mid(void *sender, json_t *event, const char *normalizer, const char *repo);

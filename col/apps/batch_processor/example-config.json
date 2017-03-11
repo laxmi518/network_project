@@ -1,0 +1,6 @@
+{
+    "core": {
+        "log_level": "WARN"
+    },
+    "loginspect_name": "LogInspect500"
+}

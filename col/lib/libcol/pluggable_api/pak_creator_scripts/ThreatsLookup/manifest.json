@@ -1,0 +1,7 @@
+{
+    "ApplicationName": "ThreatsLookup",
+    "Version": "1.0",
+    "Description": "This is a emerging threats lookup application",
+    "minimum_lp_version": "5.2.0",
+    "plugins": ["ThreatsLookup"]
+}

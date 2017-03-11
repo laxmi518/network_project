@@ -1,0 +1,21 @@
+{
+    "core": {
+        "log_level": "DEBUG"
+    },
+    "col_type": "opsec_fetcher",
+
+    "loginspect_name": "LIv5",
+    "servers": {
+        "ubuntu|192.168.2.26":{
+            "lea_server_ip": "192.168.2.144",
+            "client_dn": "CN=FinalShot,O=cpmodule..gy9quu",
+            "server_dn": "o=cpmodule..gy9quu",
+
+            //lea_server auth_type ssl_opsec
+            //lea_server auth_port 18184
+            //opsec_sslca_file /home/ubuntu/ashok_checkpoint/loggrabber/opsec.p12
+            "device_name": "checkpoint device",
+            "fetch_interval": 10
+        }
+    }
+}

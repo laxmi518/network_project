@@ -1,0 +1,10 @@
+{
+    "type": "processcommands",
+    "name": "GeoIP",
+    "ui_text": "GeoIP Command",
+    "version": "1.0",
+    "symlinks": {
+        "$THIS/geo_ip.jar": "$PROCESS_COMMANDS/"
+    },
+    "post_install": "after_install.sh"
+}

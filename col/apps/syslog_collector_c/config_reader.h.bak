@@ -1,0 +1,8 @@
+
+#include <zlog.h>
+extern zlog_category_t *c;
+
+json_t *get_json_from_config_file(char *config_path);
+const char *get_string_value_from_json(json_t *root, const char *field);
+int get_integer_value_from_json(json_t *root, char *field);
+json_t *get_json_object_from_json(json_t *root, char *field);

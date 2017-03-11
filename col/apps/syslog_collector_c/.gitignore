@@ -1,0 +1,7 @@
+*.o
+.cproject
+.project
+.DS_Store
+syslog_collector
+Debug/*.*
+Debug/makefile

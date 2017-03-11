@@ -1,0 +1,7 @@
+{
+    "ApplicationName": "RSSFetcher",
+    "Version": "1.0",
+    "Description": "This is a RSS fetcher",
+    "minimum_lp_version": "5.1.4",
+    "plugins": ["RSSFetcher"]
+}

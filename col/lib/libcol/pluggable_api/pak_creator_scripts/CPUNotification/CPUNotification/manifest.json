@@ -1,0 +1,9 @@
+{
+    "type": "system_notification",
+    "ui_text": "CPU Usage Notification",
+    "version": "1.0",
+    "notification_folder": "cpu_usage",
+    "symlinks": {
+        "$THIS/cpu_usage": "$SYSTEM_NOTIFICATION/"
+    }
+}

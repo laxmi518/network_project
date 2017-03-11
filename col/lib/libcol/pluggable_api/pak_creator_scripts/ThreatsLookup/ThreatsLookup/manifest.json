@@ -1,0 +1,15 @@
+{
+    "type": "lookup",
+    "ui_text": "Threats Lookup",
+    "name": "ThreatsLookup",
+    "version": "1.0",
+    "file_name": "emerging_threats_lookup.zip",
+    "main_class_file": "main.py",
+    "schedule_type": "HOURLY",
+    "day_hour": 60,
+    "id": "threats_lookup_1_0",
+    "root_dir": "emerging_threats_lookup",
+    "symlinks": {
+        "$THIS/emerging_threats_lookup.zip": "$LOOKUP/"
+    }
+}

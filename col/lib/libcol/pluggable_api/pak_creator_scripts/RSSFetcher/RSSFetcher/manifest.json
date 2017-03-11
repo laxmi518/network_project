@@ -1,0 +1,20 @@
+{
+    "type": "fetchers",
+    "ui_text": "RSS Fetcher",
+    "version": "1.0",
+    "service_name": "rss_fetcher",
+    "service_run_script": "rss_fetcher/rss_fetcher.py",
+    "config_gen_script": "config_gen/RSSFetcherCfgGen.py",
+    "ui": "ui/RSSFetcher",
+    "webserver": "webserver/RSSFetcher",
+    "in_li_lite": true,
+    "col_type": "rss",
+    "extra_fields_in_sid": ["-", "url"],
+    "pre_install": "",//"pre_install.sh",
+    "post_install": "" //"post_install.sh",
+    "symlinks": {
+        "$THIS/config_gen/RSSFetcherCfgGen.py": "$CONFIG_GEN/",
+        "$THIS/ui/RSSFetcher": "$UI/",
+        "$THIS/webserver/RSSFetcher": "$WEBSERVER/"
+    }
+}
